@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cadastro de Veículos</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f5f5;
+padding:40px;
+}
+
+.container{
+
+max-width:1000px;
+
+margin:auto;
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+h1{
+
+color:#d81e05;
+
+margin-bottom:30px;
+
+}
+
+.form-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+}
+
+.campo{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+label{
+
+margin-bottom:5px;
+
+font-weight:bold;
+
+}
+
+input,select{
+
+padding:12px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+}
+
+.botoes{
+
+margin-top:30px;
+
+display:flex;
+
+gap:10px;
+
+}
+
+.salvar{
+
+background:#d81e05;
+
+color:white;
+
+border:none;
+
+padding:15px 25px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+.voltar{
+
+background:#666;
+
+color:white;
+
+border:none;
+
+padding:15px 25px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚗 Cadastro de Veículo</h1>
+
+<div class="form-grid">
+
+<div class="campo">
+<label>Número Sinistro</label>
+<input type="text">
+</div>
+
+<div class="campo">
+<label>Número OS</label>
+<input type="text">
+</div>
+
+<div class="campo">
+<label>Placa</label>
+<input type="text">
+</div>
+
+<div class="campo">
+<label>Chassi</label>
+<input type="text">
+</div>
+
+<div class="campo">
+<label>Segurado</label>
+<input type="text">
+</div>
+
+<div class="campo">
+<label>Oficina</label>
+<input type="text">
+</div>
+
+<div class="campo">
+<label>Data Entrada</label>
+<input type="date">
+</div>
+
+<div class="campo">
+<label>Previsão Entrega</label>
+<input type="date">
+</div>
+
+<div class="campo">
+<label>Status</label>
+
+<select>
+<option>Recebido</option>
+<option>Aguardando Peças</option>
+<option>Funilaria</option>
+<option>Pintura</option>
+<option>Montagem</option>
+<option>Qualidade</option>
+<option>Entregue</option>
+</select>
+
+</div>
+
+</div>
+
+<div class="botoes">
+
+<button
+class="salvar">
+
+Salvar
+
+</button>
+
+<button
+class="voltar"
+onclick="window.location.href='index.html'">
+
+Voltar
+
+</button>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
