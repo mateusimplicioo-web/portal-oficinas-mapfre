@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Detalhes do Veículo</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI';
+}
+
+body{
+
+background:#f5f5f5;
+
+padding:30px;
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+margin-bottom:25px;
+}
+
+.topo{
+
+display:flex;
+
+gap:30px;
+
+align-items:center;
+}
+
+.foto{
+
+width:300px;
+
+height:200px;
+
+background:#ddd;
+
+border-radius:15px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:18px;
+
+color:#555;
+}
+
+.info h1{
+
+color:#d81e05;
+
+margin-bottom:10px;
+}
+
+.timeline{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:40px;
+
+position:relative;
+}
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+top:25px;
+
+left:0;
+
+width:100%;
+
+height:5px;
+
+background:#ddd;
+
+z-index:1;
+}
+
+.etapa{
+
+position:relative;
+
+z-index:2;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+}
+
+.icone{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:24px;
+
+margin-bottom:10px;
+}
+
+.concluido{
+
+background:#28a745;
+
+color:white;
+}
+
+.andamento{
+
+background:#ff9800;
+
+color:white;
+}
+
+.pendente{
+
+background:#ccc;
+
+color:white;
+}
+
+.nome{
+
+font-size:13px;
+
+text-align:center;
+
+font-weight:bold;
+}
+
+.botao{
+
+margin-top:30px;
+
+padding:15px 30px;
+
+background:#d81e05;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="topo">
+
+<div class="foto">
+
+<img
+src="static/img/corolla.jpg"
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:15px;
+">
+
+</div>
+
+<div class="info">
+
+<h1>🚗 Toyota Corolla</h1>
+
+<p><b>Placa:</b> ABC1234</p>
+
+<p><b>Sinistro:</b> 12345678</p>
+
+<p><b>Oficina:</b> Oficina Premium SP</p>
+
+<p><b>Previsão:</b> 15/10/2026</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Andamento do Reparo</h2>
+
+<div class="timeline">
+
+<div class="etapa">
+<div class="icone concluido">✅</div>
+<div class="nome">Recebimento</div>
+</div>
+
+<div class="etapa">
+<div class="icone concluido">✅</div>
+<div class="nome">Desmontagem</div>
+</div>
+
+<div class="etapa">
+<div class="icone concluido">✅</div>
+<div class="nome">Peças</div>
+</div>
+
+<div class="etapa">
+<div class="icone andamento">🔄</div>
+<div class="nome">Pintura</div>
+</div>
+
+<div class="etapa">
+<div class="icone pendente">⏳</div>
+<div class="nome">Montagem</div>
+</div>
+
+<div class="etapa">
+<div class="icone pendente">⏳</div>
+<div class="nome">Qualidade</div>
+</div>
+
+<div class="etapa">
+<div class="icone pendente">⏳</div>
+<div class="nome">Entrega</div>
+</div>
+
+</div>
+
+<button
+class="botao"
+onclick="window.location.href='dashboard.html'">
+
+Voltar ao Painel
+
+</button>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
